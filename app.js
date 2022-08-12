@@ -6,6 +6,9 @@ const expressip = require('express-ip');
 
 app.use(expressip().getIpInfoMiddleware)
 app.get('/',(req,res)=>{
+
+    res.header('Access-Control-Allow-Origin','*')
+
     res.json({
         code:200,
         data:req.ipInfo,
