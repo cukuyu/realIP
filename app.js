@@ -17,8 +17,6 @@ app.all('*',function (req, res, next) {
 
 app.get('/',(req,res)=>{
 
-    res.header('Access-Control-Allow-Origin','*')
-
     res.json({
         code:200,
         data:req.ipInfo,
