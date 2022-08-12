@@ -16,7 +16,6 @@ app.all('*',function (req, res, next) {
   });
 
 app.get('/',(req,res)=>{
-
     res.json({
         code:200,
         data:req.ipInfo,
@@ -25,5 +24,4 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(8080,()=>{
-    console.log("server start")
 })
